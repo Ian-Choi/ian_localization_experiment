@@ -8,6 +8,9 @@ en_gb:
   price: "Price Value"
   new_test_datum: "Add a new test datum"
   created_at: "Created at"
+  edit: "Edit"
+  show: "See Details"
+  destroy: "Remove"
 
   date:
     abbr_day_names:

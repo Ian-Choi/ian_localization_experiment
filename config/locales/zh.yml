@@ -5,6 +5,9 @@ zh:
   price: "價格值"
   new_test_datum: "添加新的測試基準"
   created_at: "輸入日期"
+  edit: "編輯"
+  show: "內容"
+  destroy: "刪除"
 
   date:
     abbr_day_names:

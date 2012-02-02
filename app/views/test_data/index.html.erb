@@ -16,9 +16,9 @@
     <td><%= test_datum.content %></td>
     <td><%= number_to_currency(test_datum.price) %></td>
     <td><%=l test_datum.created_at %></td>
-    <td><%= link_to 'Show', test_datum %></td>
-    <td><%= link_to 'Edit', edit_test_datum_path(test_datum) %></td>
-    <td><%= link_to 'Destroy', test_datum, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to t(:show), test_datum %></td>
+    <td><%= link_to t(:edit), edit_test_datum_path(test_datum) %></td>
+    <td><%= link_to t(:destroy), test_datum, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
