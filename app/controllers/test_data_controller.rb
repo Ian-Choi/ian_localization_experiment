@@ -3,6 +3,7 @@ class TestDataController < ApplicationController
   # GET /test_data.xml
   def index
     @test_data = TestDatum.all
+    @test_locale = I18n.locale
 
     flash[:notice] = t(:test_flash)
 
