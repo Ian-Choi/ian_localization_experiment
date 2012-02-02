@@ -1,0 +1,25 @@
+<h1>Listing test_data</h1>
+
+<table>
+  <tr>
+    <th>Content</th>
+    <th>Price</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @test_data.each do |test_datum| %>
+  <tr>
+    <td><%= test_datum.content %></td>
+    <td><%= test_datum.price %></td>
+    <td><%= link_to 'Show', test_datum %></td>
+    <td><%= link_to 'Edit', edit_test_datum_path(test_datum) %></td>
+    <td><%= link_to 'Destroy', test_datum, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Test datum', new_test_datum_path %>

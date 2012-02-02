@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Content:</b>
+  <%= @test_datum.content %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @test_datum.price %>
+</p>
+
+
+<%= link_to 'Edit', edit_test_datum_path(@test_datum) %> |
+<%= link_to 'Back', test_data_path %>
