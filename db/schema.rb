@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120202143159) do
+ActiveRecord::Schema.define(:version => 20120202200704) do
 
   create_table "test_data", :force => true do |t|
     t.string   "content"
@@ -18,5 +18,15 @@ ActiveRecord::Schema.define(:version => 20120202143159) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "test_datum_translations", :force => true do |t|
+    t.integer  "test_datum_id"
+    t.string   "locale"
+    t.string   "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "test_datum_translations", ["test_datum_id"], :name => "index_test_datum_translations_on_test_datum_id"
 
 end
