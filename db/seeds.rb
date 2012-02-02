@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+	test_data = TestDatum.create([{ content: 'Testing Content', price: '100' }, { content: 'Hello world!', price: '50' }])
