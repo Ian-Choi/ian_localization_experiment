@@ -5,6 +5,7 @@
   <tr>
     <th><%=t :content %></th>
     <th><%=t :price %></th>
+    <th><%=t :created_at %></th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,7 +14,8 @@
 <% @test_data.each do |test_datum| %>
   <tr>
     <td><%= test_datum.content %></td>
-    <td><%= test_datum.price %></td>
+    <td><%= number_to_currency(test_datum.price) %></td>
+    <td><%=l test_datum.created_at %></td>
     <td><%= link_to 'Show', test_datum %></td>
     <td><%= link_to 'Edit', edit_test_datum_path(test_datum) %></td>
     <td><%= link_to 'Destroy', test_datum, :confirm => 'Are you sure?', :method => :delete %></td>

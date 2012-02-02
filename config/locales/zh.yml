@@ -4,6 +4,7 @@ zh:
   content: "數據內容"
   price: "價格值"
   new_test_datum: "添加新的測試基準"
+  created_at: "輸入日期"
 
   date:
     abbr_day_names:
