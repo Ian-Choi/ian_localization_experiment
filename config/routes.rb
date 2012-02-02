@@ -1,5 +1,11 @@
 Locallization::Application.routes.draw do
-  resources :test_data
+  match '/:locale' => 'test_data#index'
+  root to: 'test_data#index'
+
+  scope "(:locale)", :locale => /en_gb|en_us|zh/ do
+    resources :test_data
+  end
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -4,6 +4,8 @@ class TestDataController < ApplicationController
   def index
     @test_data = TestDatum.all
 
+    flash[:notice] = t(:test_flash)
+
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @test_data }

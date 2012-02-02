@@ -1,0 +1,9 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en_gb:
+  test_flash: "UK English Flash Message Test"
+  listing_test_data: "Listing Test Data"
+  content: "Data Content"
+  price: "Price Value"
+  new_test_datum: "Add a new test datum"
