@@ -1,8 +1,8 @@
 Locallization::Application.routes.draw do
-  match ':locale' => 'test_data#index', :locale => /en_gb|en_us|zh/ # this line default the root for specific locale
+  match ':locale' => 'test_data#index', locale: /en_gb|zh/ # this line default the root for specific locale
   root to: 'test_data#index'               # this line default the root for default locale
 
-  scope "(:locale)", :locale => /en_gb|en_us|zh/ do
+  scope "(:locale)", locale: /en_gb|zh/ do
     resources :test_data
   end
   
