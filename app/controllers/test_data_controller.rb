@@ -7,11 +7,11 @@ class TestDataController < ApplicationController
 
     flash[:notice] = t(:test_flash)
 
-    redirect_to new_test_datum_path
-    # respond_to do |format|
-    #   format.html # index.html.erb
-    #   format.xml  { render :xml => @test_data }
-    # end
+    #redirect_to new_test_datum_path
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @test_data }
+    end
   end
 
   # GET /test_data/1

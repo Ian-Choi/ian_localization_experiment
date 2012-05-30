@@ -18,6 +18,7 @@
     <td><%=l test_datum.created_at %></td>
     <td><%= link_to t(:show), test_datum %></td>
     <td><%= link_to t(:edit), edit_test_datum_path(test_datum) %></td>
+    <td><%= link_to t(:edit), controller: 'test_data', action: 'new', id: test_datum %></td>
     <td><%= link_to t(:destroy), test_datum, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
